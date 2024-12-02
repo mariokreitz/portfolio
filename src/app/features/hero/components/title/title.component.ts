@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../../../../shared/components/button/button.component';
 
 @Component({
   selector: 'app-title',
-  imports: [],
+  imports: [ButtonComponent],
   templateUrl: './title.component.html',
-  styleUrl: './title.component.scss'
+  styleUrl: './title.component.scss',
 })
-export class TitleComponent {
-
-}
+export class TitleComponent {}
