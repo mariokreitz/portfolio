@@ -1,7 +1,8 @@
 import { Component, inject, Input } from '@angular/core';
-import { TranslationService } from '../../service/translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../../core/services/translation.service';
+import { ButtonStyle, ButtonType } from '../../../types/button/button';
 
 @Component({
   selector: 'app-button',
@@ -12,7 +13,7 @@ import { CommonModule } from '@angular/common';
 export class ButtonComponent {
   translate = inject(TranslationService);
 
-  @Input() buttonContent = 'default';
-  @Input() buttonType: 'button' | 'submit' | 'reset' = 'button';
-  @Input() buttonStyle: 'primary' | 'secondary' = 'primary';
+  @Input('content') buttonContent: string = 'default';
+  @Input('type') buttonType: ButtonType = 'button';
+  @Input('className') buttonStyle: ButtonStyle = 'primary';
 }
