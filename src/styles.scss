@@ -1,12 +1,14 @@
 @use "./scss/reset" as *;
 @use "scss/_variables.scss" as *;
 @use "scss/fonts.scss" as *;
+@use "./scss/scroller" as *;
 
 body {
   font-family: "Karla";
   font-weight: normal;
   background-color: $clr-body-bg;
   color: whitesmoke;
+  overflow-x: hidden;
 }
 
 .container {
