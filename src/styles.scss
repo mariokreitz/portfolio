@@ -3,7 +3,15 @@
   src: url("/fonts/Karla-VariableFont_wght.ttf") format("truetype");
 }
 
+:root {
+  --clr-body-bg: #292929;
+  --clr-mouse: rgba(61, 207, 182, 0.33);
+
+  --blur-mouse: blur(30px);
+}
+
 body {
   font-family: "Karla";
   font-weight: normal;
+  background-color: var(--clr-body-bg);
 }
