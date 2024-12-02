@@ -1,16 +1,13 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TranslationService } from './service/translation.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { ButtonComponent } from './components/button/button.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TranslateModule],
+  imports: [RouterOutlet, ButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'portfolio';
-
-  translate = inject(TranslationService);
 }
