@@ -1,1 +1,11 @@
+<div>
+  <p (click)="translate.switchLanguage('en')">EN</p>
+  <p (click)="translate.switchLanguage('de')">DE</p>
+</div>
+
+<header>
+  <h1>{{ "frontend" | translate }}</h1>
+  <h2>{{ "developer" | translate }}</h2>
+</header>
+
 <router-outlet />
