@@ -1,3 +1,8 @@
 {
-  "default": "button_EN"
+  "default": "button_EN",
+  "work": "Check my Work",
+  "contact": "Contact me",
+  "about": "About me",
+  "skills": "Skills",
+  "projects": "Projects"
 }

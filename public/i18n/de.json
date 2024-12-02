@@ -1,3 +1,8 @@
 {
-  "default": "button_DE"
+  "default": "button_DE",
+  "work": "Meine Projekte",
+  "contact": "Schreib mir",
+  "about": "Über mich",
+  "skills": "Skills",
+  "projects": "Projekte"
 }
