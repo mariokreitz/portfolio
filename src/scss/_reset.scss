@@ -30,6 +30,15 @@ select {
   font: inherit;
 }
 
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
 p,
 h1,
 h2,
