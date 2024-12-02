@@ -20,7 +20,7 @@ export class TranslationService {
    * Sets the default language to 'de' during construction.
    */
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('de');
+    this.translate.setDefaultLang('en');
   }
 
   /**
