@@ -2,8 +2,9 @@
   [type]="buttonType"
   [ngClass]="{
     primary: buttonStyle === 'primary',
-    secondary: buttonStyle === 'secondary'
+    secondary: buttonStyle === 'secondary',
+    animated: buttonScroll
   }"
 >
-  {{ buttonContent | translate }}
+  <span>{{ buttonContent | translate }}</span>
 </button>
