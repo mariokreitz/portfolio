@@ -1,0 +1,10 @@
+.blur-container {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--clr-mouse);
+  filter: var(--blur-mouse);
+}
