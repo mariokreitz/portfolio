@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonComponent } from './shared/components/button/button.component';
 import { CursorComponent } from './shared/components/cursor/cursor.component';
+import { HeaderComponent } from './core/components/header/header.component';
+import { FooterComponent } from './core/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ButtonComponent, CursorComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, CursorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
