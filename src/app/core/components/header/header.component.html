@@ -1,1 +1,26 @@
-<p>header works!</p>
+<header class="header" role="banner" aria-labelledby="header-title">
+  <div class="left-section">
+    <div
+      class="language-switcher"
+      role="language-switcher"
+      aria-label="Language switcher"
+    >
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+        <span class="lang-label">EN</span>
+        <span class="lang-label">DE</span>
+      </label>
+    </div>
+    <nav class="navigation" role="navigation" aria-label="Main navigation">
+      <a href="#about-me">{{ "About Me" | translate }}</a>
+      <a href="#skills">{{ "Skills" | translate }}</a>
+      <a href="#projects">{{ "Projects" | translate }}</a>
+    </nav>
+  </div>
+  <div class="right-section">
+    <a href="/">
+      <img src="assets/logo.png" alt="logo" />
+    </a>
+  </div>
+</header>
