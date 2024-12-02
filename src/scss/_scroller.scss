@@ -1,0 +1,78 @@
+@use "./variables" as *;
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  margin-right: 0;
+  padding: 1rem;
+  text-wrap: nowrap;
+  color: $clr-primary-green;
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+.scroller {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  max-width: 100%;
+  transform: rotate(-3deg);
+  user-select: none;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5.3px);
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, white 3%, white 97%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 3%,
+    white 97%,
+    transparent
+  );
+}
+
+.scroller-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] .scroller-inner {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-durection, 40s)
+    var(--_animations-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animations-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animations-direction: forwards;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-durection: 50s;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-durection: 30s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
