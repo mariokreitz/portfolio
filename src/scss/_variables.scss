@@ -1,17 +1,22 @@
 // Global variables
 // ---------------------------------------------
 $header-height: 98px;
+
 $hero-height: calc(100vh - $header-height);
 // Colors
 // ---------------------------------------------
-$clr-body-bg: rgba(41, 41, 41, 1);
+$clr-primary-green: rgba(61, 207, 182, 1);
+
+$clr-body-bg: rgba(28, 28, 28, 1);
 
 $clr-mouse: rgba(61, 207, 182, 0.33);
 
-$clr-language-switch-bg: rgba(61, 207, 182, 1);
 $clr-language-switch-text-active: rgba(255, 255, 255, 1);
 $clr-language-switch-text-inactive: rgba(61, 207, 182, 0.5);
+
+$clr-nav-link: rgba(106, 215, 191, 1);
 
 // Effects
 // ---------------------------------------------
 $blur-mouse: blur(30px);
+$gradient-hero: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
