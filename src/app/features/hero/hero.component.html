@@ -1,7 +1,10 @@
 <section id="hero" class="hero">
   <div class="container">
     <div class="content">
+      <app-left-lateral />
       <app-title />
+      <app-right-lateral />
     </div>
   </div>
+  <app-infinite-scroller [content]="scrollerContent" />
 </section>

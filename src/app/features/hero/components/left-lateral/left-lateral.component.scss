@@ -1,0 +1,61 @@
+@use "./../../../../../scss/variables" as *;
+@use "./../../../../../scss/mixin" as *;
+
+div {
+  height: 312px;
+  display: flex;
+  @include flexbox($direction: column, $justify: space-between);
+
+  p {
+    @include flexbox($justify: center);
+    width: 30px;
+    height: 48px;
+    border-radius: 32px;
+    border: 1px solid rgba(61, 207, 182, 1);
+    animation: moveUpDown 500ms ease-in infinite;
+
+    span {
+      background-color: white;
+      position: absolute;
+
+      &:nth-child(1) {
+        width: 1px;
+        height: 12px;
+      }
+
+      &:nth-child(2) {
+        width: 1px;
+        height: 6px;
+        bottom: 16.5px;
+        left: 15.5px;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        width: 1px;
+        height: 6px;
+        bottom: 16.5px;
+        right: 15.5px;
+        transform: rotate(-45deg);
+      }
+
+      @keyframes moveUpDown {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  hr {
+    border-color: $clr-primary-green;
+    height: 240px;
+    width: 0;
+  }
+}
