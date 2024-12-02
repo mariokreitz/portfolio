@@ -1,5 +1,15 @@
 @use "./../../../scss/variables" as *;
+@use "./../../../scss/mixin" as *;
 
 .hero {
+  height: 100vh;
+  background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
+  > div {
+    padding-top: $header-height;
+  }
+}
+
+.content {
   height: $hero-height;
+  @include flexbox($justify: center);
 }
