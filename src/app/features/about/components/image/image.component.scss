@@ -1,0 +1,33 @@
+@use "./../../../../../scss/variables" as *;
+
+.image-container {
+  position: relative;
+}
+
+.profile-image,
+.profile-decorator {
+  position: absolute;
+}
+
+.image-container,
+.profile-image,
+.profile-decorator {
+  width: 568px;
+  height: 568px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 30px;
+}
+
+.profile-image {
+  filter: grayscale(1);
+  z-index: 1;
+}
+
+.profile-image:hover + .profile-decorator {
+  transition: transform 100ms ease-in;
+  transform: translate(
+    -$profile-decorator-move,
+    $profile-decorator-move - 16px
+  );
+}
