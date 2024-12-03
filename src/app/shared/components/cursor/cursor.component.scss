@@ -9,4 +9,5 @@
   transform: translate(-50%, -50%);
   background-color: $clr-mouse;
   filter: $blur-mouse;
+  z-index: 9999;
 }
