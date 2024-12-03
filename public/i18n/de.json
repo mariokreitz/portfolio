@@ -1,7 +1,7 @@
 {
   "default": "button_DE",
   "work": "Meine Projekte",
-  "contact": "Schreib mir",
+  "contact": "Kontaktieren Sie mich",
   "about": "Über mich",
   "skills": "Skills",
   "projects": "Projekte",
@@ -10,5 +10,13 @@
   "aboutMeText": "Hallo, mein Name ist Mario, und ich bin ein deutschsprachiger Frontend-Entwickler aus Stuttgart. Inspiriert von den grenzenlosen Möglichkeiten der IT, bin ich leidenschaftlich daran interessiert, optisch ansprechende und intuitive Webseiten zu erstellen.",
   "aboutPerkOne": "Ich bin vielseitig einsetzbar und arbeite sowohl vor Ort in Stuttgart als auch remote effektiv. Meine Anpassungsfähigkeit ermöglicht es mir, mich nahtlos in Teams zu integrieren oder unabhängig an Projekten zu arbeiten, wobei ich stets klare Kommunikation und einen strukturierten Arbeitsansatz beibehalte.",
   "aboutPerkTwo": "Ich bin offen für neue Ideen und strebe kontinuierlich nach persönlicher Weiterentwicklung. Auf der Suche nach spannenden Herausforderungen sehe ich jede Aufgabe als Chance, mein Wissen und meine Fähigkeiten auf die nächste Ebene zu heben.",
-  "aboutPerkThree": "Für mich geht Programmieren über das bloße Schreiben von Code hinaus - es ist ein kreativer Ansatz zur Lösung von Problemen. Ich bin stolz darauf, komplexe technische Herausforderungen in intuitive, benutzerfreundliche Lösungen zu verwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+  "aboutPerkThree": "Für mich geht Programmieren über das bloße Schreiben von Code hinaus - es ist ein kreativer Ansatz zur Lösung von Problemen. Ich bin stolz darauf, komplexe technische Herausforderungen in intuitive, benutzerfreundliche Lösungen zu verwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken.",
+  "technologyHeadline": "Technologien",
+  "skillBoxHeadline": "Skill Set",
+  "skillBoxUpperContent": "Im Rahmen meiner Ausbildung im Frontend Bereich habe ich an verschiedenen Projekten gearbeitet und dabei eine Vielzahl von Technologien und Konzepten genutzt. Ich bin offen für neue Ansätze, um meine Fähigkeiten kontinuierlich zu erweitern und auf dem neuesten Stand zu bleiben.",
+  "skillBoxSubheadlineFirstHalf": "Benötigen Sie eine",
+  "skillBoxSubheadlineSecondHalf": "zusätzliche Fähigkeit?",
+  "skillBoxLowerContent": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen zu erweitern und neue Erfahrungen zu sammeln.",
+  "skillBoxButton": "Lass uns reden",
+  "interestIn": "Ich interessiere mich für Neues"
 }
