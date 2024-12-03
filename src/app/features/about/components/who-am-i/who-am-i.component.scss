@@ -12,12 +12,10 @@
 
   .about-me {
     @include flexbox($direction: column, $gap: 40px, $align: flex-start);
+    @include contentBox($clr-primary-green);
     width: 568px;
     padding: 32px;
     border-radius: 30px;
-    border: 1px solid $clr-primary-green;
-    background: rgba($clr-primary-green, 0.1);
-    backdrop-filter: blur(4px);
 
     > h3 {
       color: $clr-primary-green;
