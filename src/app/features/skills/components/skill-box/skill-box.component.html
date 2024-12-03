@@ -1,1 +1,19 @@
-<p>skill-box works!</p>
+<div class="skill-box">
+  <h2 class="technology-headline">{{ "technologyHeadline" | translate }}</h2>
+  <div class="box-content">
+    <h3 class="skillBox-headline">{{ "skillBoxHeadline" | translate }}</h3>
+    <div class="content">
+      <p class="box-upper-content">{{ "skillBoxUpperContent" | translate }}</p>
+      <div class="box-lower-content">
+        <h3>
+          {{ "skillBoxSubheadlineFirstHalf" | translate }}
+          <span class="text-highlight">{{
+            "skillBoxSubheadlineSecondHalf" | translate
+          }}</span>
+        </h3>
+        <p>{{ "skillBoxLowerContent" | translate }}</p>
+      </div>
+    </div>
+    <app-button content="skillBoxButton"></app-button>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+@use "./../../../../../scss/variables" as *;
+@use "./../../../../../scss/mixin" as *;
+
+.skill-box {
+  @include flexbox($direction: column, $align: flex-start, $gap: 20px);
+
+  .technology-headline,
+  .skillBox-headline,
+  .text-highlight {
+    color: $clr-primary-green;
+  }
+
+  .box-content {
+    @include flexbox($direction: column, $align: flex-start, $gap: 40px);
+    @include contentBox($clr-primary-green);
+    width: 520px;
+    padding: 32px;
+    border-radius: 30px;
+
+    .skillBox-headline {
+      font-family: "FireCode";
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 64px;
+      letter-spacing: -0.03em;
+      text-align: left;
+    }
+
+    .content {
+      @include flexbox($direction: column, $gap: 32px);
+
+      .box-upper-content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+      }
+
+      .box-lower-content {
+        @include flexbox($direction: column, $align: flex-start, $gap: 16px);
+        width: 100%;
+
+        h3 {
+          font-family: "FireCode";
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28.8px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+          width: 332px;
+        }
+      }
+    }
+  }
+}
