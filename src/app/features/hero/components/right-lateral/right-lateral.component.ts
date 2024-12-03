@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-right-lateral',
   imports: [],
   templateUrl: './right-lateral.component.html',
-  styleUrl: './right-lateral.component.scss'
+  styleUrl: './right-lateral.component.scss',
 })
-export class RightLateralComponent {
-
-}
+export class RightLateralComponent {}

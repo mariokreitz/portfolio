@@ -1,0 +1,61 @@
+@use "./../../../../../scss/variables" as *;
+@use "./../../../../../scss/mixin" as *;
+
+div {
+  height: 480px;
+  @include flexbox($direction: column, $justify: space-between);
+
+  #mailme {
+    transform: rotate(-90deg);
+    height: 190px;
+    width: 24px;
+    @include flexbox($justify: center);
+    text-wrap: nowrap;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $clr-primary-green;
+    }
+  }
+
+  #linkedIn,
+  #github {
+    position: relative;
+
+    path {
+      fill: $clr-primary-green;
+      transition: fill 100ms ease-in;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 50%;
+      right: -12px;
+      transform: translateY(50%);
+      width: 8px;
+      height: 8px;
+      background-color: $clr-primary-green;
+      border-radius: 9999px;
+      opacity: 0;
+      transition: opacity 100ms ease-in;
+    }
+
+    &:hover {
+      path {
+        fill: white;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  hr {
+    border-color: white;
+    height: 186px;
+    width: 0;
+  }
+}
