@@ -1,0 +1,39 @@
+@use "./../../../../../scss/mixin" as *;
+@use "./../../../../../scss/variables" as *;
+
+.content {
+  @include flexbox($direction: column, $justify: center, $gap: 8px);
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: white;
+  width: 188px;
+  height: 129px;
+  padding: 8px 10px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 32px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+  }
+
+  p {
+    color: $clr-primary-green;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.7px;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    @include flexbox($gap: 16px);
+  }
+}
