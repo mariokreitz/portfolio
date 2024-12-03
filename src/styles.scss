@@ -3,6 +3,10 @@
 @use "scss/fonts.scss" as *;
 @use "./scss/scroller" as *;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Karla";
   font-weight: normal;
