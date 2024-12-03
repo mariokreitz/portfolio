@@ -1,8 +1,11 @@
-<section id="about-me">
+<section id="about-me" role="region" aria-labelledby="about-me-title">
   <div class="container">
     <div class="content">
-      <app-image></app-image>
-      <app-who-am-i></app-who-am-i>
+      <app-image role="img" aria-label="profile picture"></app-image>
+      <app-who-am-i
+        role="article"
+        aria-labelledby="who-am-i-title"
+      ></app-who-am-i>
     </div>
   </div>
 </section>
