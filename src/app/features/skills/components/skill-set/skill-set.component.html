@@ -1,1 +1,5 @@
-<p>skill-set works!</p>
+<div>
+  @for (skill of skills; track $index) {
+  <app-single-skill [skill]="skill" />
+  }
+</div>
