@@ -57,12 +57,27 @@
 
   input {
     display: none;
+
+    &:checked + .slider:before {
+      -webkit-transform: translateX(36px);
+      -ms-transform: translateX(36px);
+      transform: translateX(36px);
+    }
   }
 
-  .lang-label {
+  .lang-label-en,
+  .lang-label-de {
     position: relative;
     z-index: 1;
     cursor: pointer;
+  }
+
+  &:hover input:not(:checked) ~ .lang-label-de {
+    color: $clr-primary-green;
+  }
+
+  &:hover input:checked ~ .lang-label-en {
+    color: $clr-primary-green;
   }
 }
 
@@ -88,19 +103,28 @@
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
+
+  &.round:before {
+    border-radius: 9999px;
+  }
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(36px);
-  -ms-transform: translateX(36px);
-  transform: translateX(36px);
+input ~ .lang-label-en,
+input ~ .lang-label-de {
+  color: $clr-language-switch-text-inactive;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
+input:checked ~ .lang-label-en {
+  color: $clr-language-switch-text-inactive;
 }
 
-.slider.round:before {
-  border-radius: 9999px;
+input:not(:checked) ~ .lang-label-de {
+  color: $clr-language-switch-text-inactive;
+}
+
+input:checked ~ .lang-label-de,
+input:not(:checked) ~ .lang-label-en {
+  color: $clr-language-switch-text-active;
+  transition: color 0.3s ease-in-out;
 }
