@@ -1,1 +1,12 @@
-<p>single-skill works!</p>
+<div class="skill">
+  <img
+    id="{{ skill.openModal ? 'modalToggler' : '' }}"
+    class="{{ skill.effectClass }}"
+    src="/assets/svg/{{ skill.svg }}"
+    alt="{{ skill.svg }}"
+  />
+  <p>{{ skill.name }}</p>
+  @if(skill.openModal){
+  <app-modal></app-modal>
+  }
+</div>

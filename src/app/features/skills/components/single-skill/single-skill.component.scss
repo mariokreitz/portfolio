@@ -1,0 +1,30 @@
+@use "./../../../../../scss/mixin" as *;
+
+.skill {
+  @include flexbox($direction: column, $gap: 10px);
+  position: relative;
+  width: 104px;
+  height: 116px;
+
+  p {
+    text-align: center;
+    user-select: none;
+  }
+
+  .bounce:hover {
+    animation: bounce 300ms ease-in-out infinite alternate;
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .scale:hover {
+    transform: scale(1.075);
+  }
+}
