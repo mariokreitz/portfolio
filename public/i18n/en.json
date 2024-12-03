@@ -4,5 +4,11 @@
   "contact": "Contact me",
   "about": "About me",
   "skills": "Skills",
-  "projects": "Projects"
+  "projects": "Projects",
+  "aboutWhoAmI": "Who am I",
+  "aboutMe": "About me",
+  "aboutMeText": "Hello, my name is Mario, and I'm a German-speaking frontend developer from Stuttgart. Inspired by the limitless possibilities of IT, I am passionate about creating visually appealing and intuitive website.",
+  "aboutPerkOne": "I am versatile and perform effectively both on-site in Stuttgart and remotely. My adaptability enables me to seamlessly integrate into teams or work independently on projects, always maintaining clear communication and a structured approach to my work.",
+  "aboutPerkTwo": "I am receptive to new ideas and consistently strive for personal development. Always seeking exciting challenges, I view each task as an opportunity to elevate my knowledge and skills to the next level.",
+  "aboutPerkThree": "For me, programming goes beyond just writing code—it's a creative approach to solving problems. I take pride in simplifying complex technical challenges into intuitive, user-friendly solutions. This is how I help you achieve your goals and bring your visions to life."
 }
