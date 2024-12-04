@@ -2,7 +2,8 @@
 @use "./../../../scss/mixin" as *;
 
 .content {
-  @include flexbox($justify: space-around);
+  @include flexbox($justify: space-between);
+  @include paddingInline($paddingLeft: 100px, $paddingRight: 100px);
 
   app-image {
     margin-bottom: 238px;

@@ -1,3 +1,12 @@
+@use "./../../../scss/variables" as *;
+@use "./../../../scss/mixin" as *;
+
 #projects {
   padding-top: 144px;
+  padding-bottom: 16px;
+}
+
+.content {
+  @include flexbox($direction: column, $align: flex-start);
+  @include paddingInline($paddingLeft: 100px, $paddingRight: 100px);
 }
