@@ -1,0 +1,129 @@
+@use "./../../../../../../scss/variables" as *;
+@use "./../../../../../../scss/mixin" as *;
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modal-content {
+  @include flexbox($gap: 88px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $gradient-hero;
+  padding: 80px;
+  border-radius: 30px;
+  border: 1px solid $clr-primary-green;
+  z-index: 20;
+
+  .content-left {
+    @include flexbox($direction: column, $align: flex-start, $gap: 40px);
+    width: 480px;
+
+    .title {
+      @include flexbox($direction: column, $align: flex-start, $gap: 24px);
+
+      > p {
+        font-size: 128px;
+        font-weight: 700;
+        line-height: 100px;
+        letter-spacing: -0.02em;
+        color: $clr-primary-green;
+      }
+
+      > h3 {
+        font-family: "FireCode";
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 51.2px;
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .description-wrapper {
+      .sub-title {
+        font-family: "FireCode";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        color: $clr-primary-green;
+      }
+
+      .description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        margin-top: 20px;
+        margin-bottom: 32px;
+      }
+
+      > ul {
+        @include flexbox($gap: 16px);
+
+        li {
+          @include flexbox($gap: 4px);
+        }
+      }
+    }
+
+    .button-controls {
+      @include flexbox($gap: 32px);
+    }
+  }
+
+  .content-right {
+    @include flexbox($direction: column, $align: flex-end, $gap: 40px);
+    width: 520px;
+
+    > img {
+      width: inherit;
+      height: 370px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 30px;
+    }
+  }
+}
+
+.button-close {
+  transition: all 200ms ease-in;
+
+  path {
+    transition: all 200ms ease-in;
+  }
+
+  &:hover {
+    transform: scale(1.5);
+  }
+
+  &:hover path {
+    fill: $clr-primary-green;
+  }
+}
+
+.button-next {
+  @include flexbox($gap: 14px);
+  color: $clr-primary-green;
+
+  transition: all 100ms ease-in;
+
+  path {
+    transition: all 100ms ease-in;
+  }
+
+  &:hover {
+    color: white;
+  }
+
+  &:hover path {
+    transform: translateX(5px);
+    fill: #3dcfb6;
+  }
+}
