@@ -1,7 +1,17 @@
 <div class="content">
   @for (project of projects; track $index; let last = $last) {
-  <app-menu-item [project]="project" [isLast]="last"></app-menu-item>
+  <app-menu-item
+    (click)="openModal(project)"
+    [project]="project"
+    [isLast]="last"
+  ></app-menu-item>
   }@empty {
   <p>no projects found</p>
+  } @if (modalData) {
+  <app-menu-modal
+    [data]="modalData"
+    (close)="closeModal()"
+    (next)="nextProject($event)"
+  ></app-menu-modal>
   }
 </div>
