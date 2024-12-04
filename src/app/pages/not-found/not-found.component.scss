@@ -1,0 +1,12 @@
+@use "./../../../scss/variables" as *;
+@use "./../../../scss/mixin" as *;
+
+.not-found {
+  position: relative;
+  height: calc(100vh - 353px);
+}
+
+.content {
+  height: calc(100vh - 353px);
+  @include flexbox($direction: column, $justify: center);
+}
