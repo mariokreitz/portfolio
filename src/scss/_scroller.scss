@@ -19,13 +19,13 @@
 
 .scroller {
   position: absolute;
-  bottom: 14px;
+  bottom: 4px;
   left: 0;
   right: 0;
   z-index: 2;
   max-width: 100%;
   transform-origin: 0;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
   user-select: none;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(5.3px);
