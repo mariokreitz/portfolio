@@ -36,7 +36,7 @@
     cursor: pointer;
 
     .preview {
-      display: block;
+      opacity: 1;
     }
   }
 
@@ -45,7 +45,8 @@
   }
 
   .preview {
-    display: none;
+    user-select: none;
+    pointer-events: none;
     position: absolute;
     right: -50%;
     top: -50%;
@@ -53,6 +54,8 @@
     width: 292px;
     height: 192px;
     border-radius: 16px;
+    transition: opacity 125ms ease-in;
+    opacity: 0;
 
     img {
       position: absolute;
