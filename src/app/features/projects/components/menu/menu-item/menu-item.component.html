@@ -1,1 +1,18 @@
-<p>menu-item works!</p>
+<article
+  [ngClass]="{
+    'project-card': true,
+    'border-top': true,
+    'border-bottom': isLast
+  }"
+>
+  <h2>{{ project.name }}</h2>
+  <ul>
+    @for (skill of project.tech; track $index; let last = $last) {
+    <li>{{ skill.name }}</li>
+    @if(!last){
+    <span class="seperator"></span>
+    } } @empty {
+    <li>Made with Chuck Norris</li>
+    }
+  </ul>
+</article>
