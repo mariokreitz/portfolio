@@ -7,4 +7,8 @@ import { ButtonComponent } from '../../../../shared/components/button/button.com
   templateUrl: './title.component.html',
   styleUrl: './title.component.scss',
 })
-export class TitleComponent {}
+export class TitleComponent {
+  onNavigateToProjects() {
+    window.location.href = '#projects';
+  }
+}
