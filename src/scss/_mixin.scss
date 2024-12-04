@@ -6,8 +6,13 @@
   gap: $gap;
 }
 
-@mixin contentBox($color) {
+@mixin contentBox($color, $alpha: 0.1) {
   border: 1px solid $color;
-  background: rgba($color, 0.1);
+  background: rgba($color, $alpha);
   backdrop-filter: blur(4px);
+}
+
+@mixin paddingInline($paddingLeft: 0, $paddingRight: 0) {
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
 }
