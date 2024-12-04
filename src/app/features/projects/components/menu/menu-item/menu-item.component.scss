@@ -3,17 +3,74 @@
 
 .project-card {
   @include flexbox($justify: space-between);
+  position: relative;
   padding: 40px 32px 40px 32px;
+  transition: background-color 125ms ease-in-out;
 
   h2 {
+    position: relative;
     font-family: "FireCode";
     font-size: 24px;
     font-weight: 700;
     line-height: 28.8px;
+
+    &::after {
+      position: absolute;
+      right: -28px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: url("/assets/svg/arrow_outward.svg");
+      width: 23px;
+      height: 23px;
+      opacity: 0;
+      transition: opacity 125ms ease-in-out;
+    }
   }
 
   ul {
     @include flexbox($gap: 10px);
+  }
+
+  &:hover {
+    background-color: rgba($clr-primary-green, $alpha: 0.3);
+    cursor: pointer;
+
+    .preview {
+      display: block;
+    }
+  }
+
+  &:hover h2::after {
+    opacity: 1;
+  }
+
+  .preview {
+    display: none;
+    position: absolute;
+    right: -50%;
+    top: -50%;
+    transform: translate(calc(-50% + 72px), 0);
+    width: 292px;
+    height: 192px;
+    border-radius: 16px;
+
+    img {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      object-fit: cover;
+
+      &:first-child {
+        z-index: 2;
+      }
+
+      &:last-child {
+        z-index: 1;
+        right: -20px;
+        bottom: -20px;
+      }
+    }
   }
 }
 
