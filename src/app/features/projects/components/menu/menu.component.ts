@@ -67,7 +67,7 @@ export class MenuComponent {
       },
       {
         id: 2,
-        name: 'Pokedex',
+        name: 'Pokédex',
         description:
           'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
         screenshotUrl:
