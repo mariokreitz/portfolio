@@ -5,14 +5,38 @@ button {
   padding: 0px 24px 0px 24px;
   border-radius: 9999px;
   overflow: hidden;
+
+  &:hover {
+    border: $btn-hover-border;
+  }
 }
 
-.primary {
+.primary,
+.secondary {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
+.secondary {
+  position: relative;
+  transition: all 100ms ease-in;
+  padding-right: 39px;
+
+  &::after {
+    position: absolute;
+    content: url("/assets/img/arrow_outward.png");
+    transition: all 100ms ease-in;
+    margin-left: 8px;
+  }
+
+  &:hover {
+    color: $clr-primary-green;
+  }
+  &:hover::after {
+    transform: translate(2px, -2px);
+  }
+}
+
 .animated:hover {
-  border: $btn-hover-border;
   span {
     display: inline-block;
     position: relative;
