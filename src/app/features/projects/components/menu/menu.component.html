@@ -1,1 +1,7 @@
-<p>menu works!</p>
+<div class="content">
+  @for (project of projects; track $index; let last = $last) {
+  <app-menu-item [project]="project" [isLast]="last"></app-menu-item>
+  }@empty {
+  <p>no projects found</p>
+  }
+</div>
