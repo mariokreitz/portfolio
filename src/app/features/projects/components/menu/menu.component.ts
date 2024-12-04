@@ -71,7 +71,7 @@ export class MenuComponent {
         description:
           'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
         screenshotUrl:
-          'https://raw.githubusercontent.com/mariokreitz/Shadowhound/refs/heads/main/screenshot_menu.png',
+          'https://raw.githubusercontent.com/mariokreitz/pokedex-v2/refs/heads/main/src/assets/screenshot.png',
         tech: [
           {
             imgSrc: 'Angular Small.svg',
