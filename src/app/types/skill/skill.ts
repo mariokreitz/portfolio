@@ -1,6 +1,6 @@
 export type Skill = {
   name: string;
-  svg: string;
+  img: string;
   effectClass: string;
   openModal: boolean;
 };
