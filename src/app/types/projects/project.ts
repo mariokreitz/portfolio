@@ -1,7 +1,8 @@
 export type Project = {
   id: number;
   name: string;
-  description: string;
+  descriptionEN: string;
+  descriptionDE: string;
   screenshotUrl: string;
   tech: {
     imgSrc: string;
