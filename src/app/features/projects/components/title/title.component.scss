@@ -1,0 +1,30 @@
+@use "./../../../../../scss/variables" as *;
+@use "./../../../../../scss/mixin" as *;
+
+.title {
+  @include flexbox($direction: column, $align: flex-start, $gap: 20px);
+  h2,
+  h3 {
+    color: $clr-primary-green;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.06px;
+  }
+
+  h3 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    width: 456px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
+}
