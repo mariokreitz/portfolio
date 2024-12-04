@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<div class="container">
+  <footer class="footer">
+    <div class="footer-left">
+      <a href="#hero">
+        <img src="/assets/img/react.png" alt="logo" />
+      </a>
+      <div class="left-content">
+        <p>Web Developer</p>
+        <p>Stuttgart Germany</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Mario Kreitz</p>
+    </div>
+    <ul class="footer-right">
+      @for (link of links; track $index) {
+      <li>
+        @if(!link.sidemap){<a
+          class="external-links"
+          [href]="link.email ? 'mailto:' + link.url : link.url"
+          target="_blank"
+          >{{ link.name }}</a
+        >}@else {
+        <p
+          class="footer-router-links"
+          [routerLink]="[link.url]"
+          routerLinkActive="router-link-active"
+        >
+          {{ link.name }}
+        </p>
+        }
+      </li>
+      }
+    </ul>
+  </footer>
+</div>

@@ -1,0 +1,49 @@
+@use "./../../../../scss/variables" as *;
+@use "./../../../../scss/mixin" as *;
+
+.footer {
+  @include flexbox($justify: space-between);
+  padding-top: 144px;
+  padding-bottom: 64px;
+
+  .footer-left {
+    @include flexbox($direction: column, $align: flex-start, $gap: 32px);
+
+    .left-content {
+      @include flexbox($direction: column, $align: flex-start, $gap: 8px);
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+      }
+    }
+  }
+
+  .footer-copyright {
+    font-family: "FireCode";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: $clr-primary-green;
+  }
+
+  .footer-right {
+    @include flexbox(
+      $direction: column,
+      $justify: flex-end,
+      $align: flex-start,
+      $gap: 8px
+    );
+
+    a,
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.2px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
