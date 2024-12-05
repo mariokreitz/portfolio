@@ -3,10 +3,17 @@ import { HeroComponent } from '../../features/hero/hero.component';
 import { AboutComponent } from '../../features/about/about.component';
 import { SkillsComponent } from '../../features/skills/skills.component';
 import { ProjectsComponent } from '../../features/projects/projects.component';
+import { TestimonialsComponent } from '../../features/testimonials/testimonials.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, AboutComponent, SkillsComponent, ProjectsComponent],
+  imports: [
+    HeroComponent,
+    AboutComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    TestimonialsComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
