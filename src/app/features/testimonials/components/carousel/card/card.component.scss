@@ -1,0 +1,64 @@
+@use "./../../../../../../scss/mixin" as *;
+@use "./../../../../../../scss/variables" as *;
+
+.card {
+  @include contentBox($clr-primary-green, $alpha: 0.3);
+  @include flexbox(
+    $direction: column,
+    $align: flex-start,
+    $justify: space-between
+  );
+  width: 632px;
+  height: 274px;
+  border-radius: 32px;
+  padding: 48px 40px;
+
+  .header {
+    position: relative;
+
+    > img {
+      position: absolute;
+      top: -64px;
+      left: -90px;
+    }
+
+    .title {
+      height: 130px;
+      overflow-y: auto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      padding: 4px;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $clr-primary-green;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba($clr-primary-green, 10%);
+      }
+    }
+  }
+
+  .footer {
+    @include flexbox($gap: 16px);
+    width: 100%;
+
+    .author {
+      width: fit-content;
+    }
+
+    hr {
+      flex: 1;
+    }
+  }
+}
