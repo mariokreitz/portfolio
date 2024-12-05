@@ -1,0 +1,34 @@
+@use "./../../../scss/variables" as *;
+@use "./../../../scss/mixin" as *;
+
+.testimonials {
+  padding-top: 144px;
+
+  .content {
+    @include flexbox(
+      $direction: column,
+      $justify: center,
+      $align: center,
+      $gap: 48px
+    );
+
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 10%,
+      white 90%,
+      transparent
+    );
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 10%,
+      white 90%,
+      transparent
+    );
+  }
+
+  app-carousel {
+    width: 100%;
+  }
+}
