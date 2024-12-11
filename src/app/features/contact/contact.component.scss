@@ -1,0 +1,11 @@
+@use "./../../../scss/variables" as *;
+@use "./../../../scss/mixin" as *;
+
+.contact-me {
+  padding-top: 144px;
+  padding-bottom: 16px;
+}
+
+.content {
+  @include flexbox($align: flex-start, $gap: 64px);
+}
