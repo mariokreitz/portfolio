@@ -6,12 +6,33 @@
   position: relative;
   width: 100%;
   max-width: 600px;
+  height: 100%;
 
   .carousel-item {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+
+    &.active {
+      opacity: 1;
+      transform: translate(0) scale(1) rotateY(0);
+      z-index: 2;
+    }
+
+    &.left,
+    &.right {
+      opacity: 0.5;
+      z-index: 1;
+    }
+
+    &.left {
+      transform: translate(-100%) scale(0.8) rotateY(20deg);
+    }
+
+    &.right {
+      transform: translate(100%) scale(0.8) rotateY(-20deg);
+    }
   }
 }
 
@@ -42,5 +63,9 @@
     height: 8px;
     border-radius: 9999px;
     background-color: white;
+
+    &.active-dot {
+      background-color: $clr-primary-green;
+    }
   }
 }

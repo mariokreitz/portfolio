@@ -1,6 +1,16 @@
 <div class="carousel">
   @for (testimonial of testimonials; track $index) {
-  <app-card [testimonial]="testimonial" class="carousel-item"></app-card>
+  <app-card
+    [testimonial]="testimonial"
+    class="carousel-item"
+    [ngClass]="{
+      active: $index === currentIndex,
+      left:
+        $index ===
+        (currentIndex - 1 + testimonials.length) % testimonials.length,
+      right: $index === (currentIndex + 1) % testimonials.length
+    }"
+  ></app-card>
   }@empty {
   <p>
     No testimonials yet, but I'm sure Chuck Norris will say something nice about
@@ -10,7 +20,11 @@
 </div>
 <div class="carousel-control">
   @if(testimonials){
-  <button type="button" class="btn-control btn-left">
+  <button
+    (click)="prevTestimonial()"
+    type="button"
+    class="btn-control btn-left"
+  >
     <svg
       width="19"
       height="20"
@@ -25,10 +39,17 @@
     </svg>
   </button>
   } @for (testimonial of testimonials; track $index) {
-  <span class="dot"></span>
+  <span
+    class="dot"
+    [ngClass]="{ 'active-dot': $index === currentIndex }"
+  ></span>
 
   } @if(testimonials){
-  <button type="button" class="btn-control btn-right">
+  <button
+    (click)="nextTestimonial()"
+    type="button"
+    class="btn-control btn-right"
+  >
     <svg
       width="19"
       height="20"
