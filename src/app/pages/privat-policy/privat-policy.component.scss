@@ -1,0 +1,43 @@
+@use "./../../../scss/variables" as *;
+@use "./../../../scss/mixin" as *;
+
+.policy {
+  position: relative;
+
+  .content {
+    @include flexbox($direction: column, $align: flex-start);
+    min-height: calc(100vh - 353px);
+    padding-top: $header-height;
+    text-wrap: balance;
+    word-break: normal;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: $clr-primary-green;
+      text-decoration: underline;
+    }
+  }
+}
