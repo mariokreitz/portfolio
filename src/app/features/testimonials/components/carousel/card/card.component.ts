@@ -10,6 +10,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card.component.scss',
 })
 export class CardComponent {
+  /**
+   * Index of the currently displayed testimonial
+   */
   translate = inject(TranslateService);
+
+  /**
+   * Card component for displaying a single testimonial
+   */
   @Input() testimonial: Terstimonial | null = null;
 }

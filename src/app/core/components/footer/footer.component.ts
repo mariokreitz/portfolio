@@ -8,7 +8,14 @@ import { RouterModule } from '@angular/router';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
+/**
+ * FooterComponent is responsible for rendering the footer section of the application.
+ */
 export class FooterComponent {
+  /**
+   * An array of links to be displayed in the footer.
+   * Each link is an object containing a name, a URL, and an optional email flag.
+   */
   links: NavLink[] = [
     {
       name: 'Github',

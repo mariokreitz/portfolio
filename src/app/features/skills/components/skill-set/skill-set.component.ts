@@ -9,6 +9,13 @@ import { Skill } from '../../../../types/skill/skill';
   styleUrl: './skill-set.component.scss',
 })
 export class SkillSetComponent {
+  /**
+   * List of skills
+   * @property {Skill[]} skills - Array of Skill objects
+   * @property {string} skills.name - Name of the skill
+   * @property {string} skills.img - Path to the image of the skill
+   * @property {string} skills.effectClass - Class name of the animation effect
+   */
   skills: Skill[] = [
     {
       name: 'HTML',
