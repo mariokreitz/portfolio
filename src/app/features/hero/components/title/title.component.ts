@@ -11,4 +11,8 @@ export class TitleComponent {
   onNavigateToProjects() {
     window.location.href = '#projects';
   }
+
+  onNavigateToContact() {
+    window.location.href = '#contact-me';
+  }
 }
