@@ -22,5 +22,10 @@
   "projectsHeadline": "Meine Projekte",
   "projectParagraph": "Entdecken Sie eine Auswahl meiner Arbeiten hier. Interagieren Sie mit meinen Projekten, um meine Fähigkeiten in Aktion zu sehen.",
   "projectModalSubtitle": "Was ist das für ein Projekt?",
-  "testimonialsHeadline": "Was meine Kollegen über mich sagen"
+  "testimonialsHeadline": "Was meine Kollegen über mich sagen",
+  "contactSubheadline": "Arbeiten wir zusammen",
+  "contactQuestion": "Gibt es ein Problem zu lösen?",
+  "contactPhrase": "Kontaktieren Sie mich über das Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+  "contactEnd": "Sie benötigen einen Frontend Entwickler?",
+  "contactEndTalk": "Schreiben sie mir"
 }
