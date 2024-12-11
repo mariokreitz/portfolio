@@ -45,7 +45,7 @@ export class CarouselComponent {
     },
     {
       id: 2,
-      name: 'Marcel Menke',
+      name: '',
       contentEN: '',
       contentDE: '',
     },
