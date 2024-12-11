@@ -14,6 +14,9 @@
         <p>{{ "skillBoxLowerContent" | translate }}</p>
       </div>
     </div>
-    <app-button content="skillBoxButton"></app-button>
+    <app-button
+      (click)="onNavigateToContact()"
+      content="skillBoxButton"
+    ></app-button>
   </div>
 </div>

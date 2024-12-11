@@ -11,4 +11,8 @@ import { ButtonComponent } from '../../../../shared/components/button/button.com
 })
 export class SkillBoxComponent {
   translate = inject(TranslationService);
+
+  onNavigateToContact() {
+    window.location.href = '#contact-me';
+  }
 }
