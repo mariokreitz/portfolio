@@ -32,7 +32,7 @@ export class FooterComponent {
     },
     {
       name: 'Legal Notice',
-      url: 'legal',
+      url: 'policy',
       sidemap: true,
     },
     {
