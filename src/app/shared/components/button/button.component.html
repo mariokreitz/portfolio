@@ -5,6 +5,7 @@
     secondary: buttonStyle === 'secondary',
     animated: buttonScroll
   }"
+  [disabled]="isDisabled"
 >
   <span>{{ buttonContent | translate }}</span>
 </button>

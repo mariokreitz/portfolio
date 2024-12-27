@@ -17,4 +17,5 @@ export class ButtonComponent {
   @Input('type') buttonType: ButtonType = 'button';
   @Input('className') buttonStyle: ButtonStyle = 'primary';
   @Input('animated') buttonScroll: boolean = true;
+  @Input('disabled') isDisabled: boolean = false;
 }
