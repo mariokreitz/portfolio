@@ -7,6 +7,6 @@
 }
 
 .content {
-  @include flexbox($justify: space-between);
+  @include flexbox($justify: space-between, $align: flex-start);
   @include paddingInline($paddingLeft: 100px, $paddingRight: 100px);
 }
