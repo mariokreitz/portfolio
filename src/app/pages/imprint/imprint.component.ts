@@ -4,8 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-imprint',
   imports: [],
   templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss'
+  styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
-
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }
