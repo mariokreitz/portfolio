@@ -27,5 +27,17 @@
   "contactQuestion": "Got a problem to solve?",
   "contactPhrase": "Contact me through this form, I am interested in hearing from you, knowingyour ideas and contributing to your projects with my work.",
   "contactEnd": "Need a Frontenddeveloper?",
-  "contactEndTalk": "Let's talk!"
+  "contactEndTalk": "Let's talk!",
+  "contactFormName": "What's your name?",
+  "contactFormNamePlaceholder": "Your name goes here",
+  "contactFormEmail": "What's your email?",
+  "contactFormEmailPlaceholder": "youremail@email.com",
+  "contactFormMessage": "How can I help you?",
+  "contactFormMessagePlaceholder": "Hello Mario, I am interested in...",
+  "contactFormAgreementOne": "I've read the",
+  "contactFormAgreementTwo": "and agree to the processing of my data as outlined.",
+  "contactFormPolicy": "privacy policy",
+  "contactFormErrorName": "Please enter your name",
+  "contactFormErrorEmail": "Please enter your email",
+  "contactFormErrorMessage": "Please enter a message"
 }
