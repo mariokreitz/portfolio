@@ -18,12 +18,12 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
         $recipient = 'contact@mario-kreitz.dev';
         $subject = "Contact From <$email>";
-        $message = "From: $name<br>$message";
+        $message = "From:" .  $name . "<br>" . $message;
 
         $headers = [
             'MIME-Version: 1.0',
             'Content-type: text/html; charset=utf-8',
-            'From: noreply@mywebsite.com'
+            'From: noreply@mario-kreitz.dev'
         ];
 
         mail($recipient, $subject, $message, implode("\r\n", $headers));

@@ -1,0 +1,137 @@
+@use "./../../../../../scss/variables" as *;
+@use "./../../../../../scss/mixin" as *;
+
+form {
+  width: 616px;
+
+  .form-group {
+    @include flexbox(
+      $direction: column,
+      $justify: flex-start,
+      $align: flex-start,
+      $gap: 16px
+    );
+
+    padding: 32px;
+    border-top: 2px solid $clr-primary-green;
+
+    label {
+      font-family: "FireCode";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28.8px;
+      text-decoration-skip-ink: none;
+      color: $clr-primary-green;
+    }
+
+    input:not([type="checkbox"]),
+    textarea {
+      all: unset;
+      background-color: transparent;
+      resize: none;
+      width: 100%;
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+
+    input {
+      &:-webkit-autofill,
+      &:-moz-autofill,
+      &:-ms-autofill,
+      &:-o-autofill,
+      &:-khtml-autofill,
+      &:autofill {
+        background-color: transparent !important;
+      }
+    }
+
+    textarea {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $clr-primary-green;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba($clr-primary-green, 10%);
+      }
+    }
+
+    &:last-of-type {
+      @include flexbox(
+        $direction: row,
+        $justify: flex-start,
+        $align: flex-start,
+        $gap: 12px
+      );
+
+      label {
+        font-size: 15px;
+        line-height: 18px;
+        color: white;
+        width: 100%;
+
+        span {
+          color: $clr-primary-green;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#privacy-policy {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $clr-primary-green;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:checked {
+    background-color: $clr-primary-green;
+  }
+}
+
+.error {
+  font-size: 14px;
+  color: $clr-error-message;
+}
+
+.toast {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $clr-primary-green;
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  z-index: 999;
+  animation: toast 3s ease-in-out forwards;
+
+  @keyframes toast {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+}
