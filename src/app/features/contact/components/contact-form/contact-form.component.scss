@@ -4,6 +4,10 @@
 form {
   width: 616px;
 
+  @include breakpoint(xl) {
+    width: 530px;
+  }
+
   .form-group {
     @include flexbox(
       $direction: column,
@@ -71,7 +75,7 @@ form {
       }
     }
 
-    &:last-of-type {
+    &.agreement {
       @include flexbox(
         $direction: row,
         $justify: flex-start,
@@ -90,6 +94,18 @@ form {
           cursor: pointer;
         }
       }
+    }
+
+    &:last-of-type {
+      border: unset;
+      padding: unset;
+
+      @include flexbox(
+        $direction: row,
+        $justify: center,
+        $align: center,
+        $gap: 0
+      );
     }
   }
 }

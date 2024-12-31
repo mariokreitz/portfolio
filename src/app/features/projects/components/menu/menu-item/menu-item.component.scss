@@ -57,6 +57,14 @@
     transition: opacity 125ms ease-in;
     opacity: 0;
 
+    @include breakpoint(lg) {
+      right: -45%;
+    }
+
+    @include breakpoint(md) {
+      display: none;
+    }
+
     img {
       position: absolute;
       width: inherit;

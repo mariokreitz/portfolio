@@ -17,6 +17,10 @@
     padding: 32px;
     border-radius: 30px;
 
+    @include breakpoint(lg) {
+      width: 568px;
+    }
+
     .skillBox-headline {
       font-family: "FireCode";
       font-size: 64px;

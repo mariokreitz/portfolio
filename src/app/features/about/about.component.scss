@@ -8,6 +8,28 @@
   app-image {
     margin-bottom: 238px;
   }
+
+  @include breakpoint(xl) {
+    @include flexbox(
+      $direction: row,
+      $justify: space-between,
+      $align: center,
+      $gap: 0
+    );
+
+    app-image {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include breakpoint(md) {
+    @include flexbox(
+      $direction: column,
+      $justify: space-between,
+      $align: center,
+      $gap: 40px
+    );
+  }
 }
 
 #about-me {

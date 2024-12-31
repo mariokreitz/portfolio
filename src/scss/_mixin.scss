@@ -15,4 +15,33 @@
 @mixin paddingInline($paddingLeft: 0, $paddingRight: 0) {
   padding-left: $paddingLeft;
   padding-right: $paddingRight;
+
+  @include breakpoint(xl) {
+    padding-left: $paddingLeft / 2;
+    padding-right: $paddingRight / 2;
+  }
+}
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == "sm" {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == "md" {
+    @media screen and (max-width: 1300px) {
+      @content;
+    }
+  } @else if $breakpoint == "lg" {
+    @media screen and (max-width: 1400px) {
+      @content;
+    }
+  } @else if $breakpoint == "xl" {
+    @media screen and (max-width: 1500px) {
+      @content;
+    }
+  } @else if $breakpoint == "xxl" {
+    @media screen and (max-width: 1600px) {
+      @content;
+    }
+  }
 }

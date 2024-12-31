@@ -49,7 +49,7 @@
     <span class="error">{{ "contactFormErrorMessage" | translate }}</span>
     }
   </div>
-  <div class="form-group">
+  <div class="form-group agreement">
     <input
       type="checkbox"
       id="privacy-policy"
@@ -65,10 +65,13 @@
       {{ "contactFormAgreementTwo" | translate }}
     </label>
   </div>
-  <app-button
-    [disabled]="!hasPolicyRead"
-    [animated]="false"
-    content="Say Hello :&#41;"
-    type="submit"
-  ></app-button>
+
+  <div class="form-group">
+    <app-button
+      [disabled]="!hasPolicyRead"
+      [animated]="false"
+      content="Say Hello :&#41;"
+      type="submit"
+    ></app-button>
+  </div>
 </form>

@@ -9,5 +9,23 @@
   .content {
     @include flexbox($justify: space-between);
     @include paddingInline($paddingLeft: 100px, $paddingRight: 100px);
+
+    @include breakpoint(lg) {
+      @include flexbox(
+        $direction: row,
+        $justify: space-between,
+        $align: center,
+        $gap: 0
+      );
+    }
+
+    @include breakpoint(md) {
+      @include flexbox(
+        $direction: column,
+        $justify: space-between,
+        $align: center,
+        $gap: 40px
+      );
+    }
   }
 }

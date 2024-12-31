@@ -1,6 +1,7 @@
 @use "./scss/reset" as *;
-@use "scss/_variables.scss" as *;
-@use "scss/fonts.scss" as *;
+@use "scss/variables" as *;
+@use "scss/mixin" as *;
+@use "scss/fonts" as *;
 @use "./scss/scroller" as *;
 
 html {
@@ -32,10 +33,15 @@ body {
 }
 
 .container {
+  $paddingLeft: 96px;
+  $paddingRight: 96px;
   max-width: 1920px;
   margin: auto;
-  padding-left: 96px;
-  padding-right: 96px;
+  @include paddingInline($paddingLeft, $paddingRight);
+
+  @include breakpoint(xl) {
+    @include paddingInline($paddingLeft / 2, $paddingRight/2);
+  }
 }
 
 .d_none {

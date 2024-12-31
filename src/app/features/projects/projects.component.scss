@@ -9,4 +9,10 @@
 .content {
   @include flexbox($direction: column, $align: flex-start);
   @include paddingInline($paddingLeft: 100px, $paddingRight: 100px);
+
+  @include breakpoint(md) {
+    app-menu {
+      width: 100%;
+    }
+  }
 }

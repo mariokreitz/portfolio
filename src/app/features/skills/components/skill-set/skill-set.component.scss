@@ -4,4 +4,10 @@ div {
   @include flexbox($gap: 72px);
   width: 632px;
   flex-wrap: wrap;
+
+  @include breakpoint(xxl) {
+    @include flexbox($gap: 40px);
+    width: 550px;
+    flex-wrap: wrap;
+  }
 }

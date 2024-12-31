@@ -9,4 +9,13 @@
 .content {
   @include flexbox($justify: space-between, $align: flex-start);
   @include paddingInline($paddingLeft: 100px, $paddingRight: 100px);
+
+  @include breakpoint(md) {
+    @include flexbox(
+      $direction: column,
+      $justify: flex-start,
+      $align: center,
+      $gap: 64px
+    );
+  }
 }
