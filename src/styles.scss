@@ -46,6 +46,13 @@ body {
       math.div($paddingRight, 2)
     );
   }
+
+  @include breakpoint(sm) {
+    @include paddingInline(
+      math.div($paddingLeft, 4),
+      math.div($paddingRight, 4)
+    );
+  }
 }
 
 .d_none {
