@@ -76,6 +76,48 @@
     .button-controls {
       @include flexbox($gap: 32px);
     }
+
+    @include breakpoint(md) {
+      width: 370px;
+
+      .title {
+        gap: 12px;
+
+        > p {
+          font-size: 72px;
+          line-height: 72px;
+        }
+
+        > h3 {
+          font-size: 56px;
+          line-height: 44px;
+        }
+      }
+
+      .description-wrapper {
+        .sub-title {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        .description {
+          font-size: 16px;
+          line-height: 19.2px;
+        }
+
+        > ul {
+          @include flexbox($gap: 16px);
+
+          li {
+            @include flexbox($gap: 4px);
+          }
+        }
+      }
+
+      .button-controls {
+        @include flexbox($gap: 32px);
+      }
+    }
   }
 
   .content-right {
@@ -89,6 +131,27 @@
       object-position: center;
       border-radius: 30px;
     }
+
+    @include breakpoint(md) {
+      width: 180px;
+      gap: 100px;
+
+      > img {
+        height: 200px;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  @include breakpoint(md) {
+    gap: 20px;
+  }
+
+  @include breakpoint(sm) {
+    height: 100%;
+    width: 100%;
+    border: unset;
+    border-radius: unset;
   }
 }
 
