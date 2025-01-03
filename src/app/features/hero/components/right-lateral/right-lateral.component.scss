@@ -3,6 +3,7 @@
 
 div {
   height: 480px;
+  overflow: hidden;
   @include flexbox($direction: column, $justify: space-between);
 
   #mailme {
