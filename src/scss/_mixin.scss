@@ -26,7 +26,7 @@
 
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == "sm" {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 830px) {
       @content;
     }
   } @else if $breakpoint == "md" {
