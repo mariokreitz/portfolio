@@ -109,6 +109,7 @@ export class MenuComponent {
    */
   openModal(project: Project) {
     this.modalService.openModal(project);
+    document.body.style.overflowY = 'hidden';
   }
 
   /**
@@ -117,6 +118,7 @@ export class MenuComponent {
    */
   closeModal() {
     this.modalService.closeModal();
+    document.body.style.overflowY = 'auto';
   }
 
   /**
