@@ -28,5 +28,46 @@
         />
       </a>
     </div>
+    <div class="mobile-menu-section">
+      <button
+        class="mobile-menu-toggler"
+        aria-label="Open navigation"
+        (click)="toggleMobileMenu()"
+      >
+        <span class="hamburger-menu"></span>
+        <span class="hamburger-menu"></span>
+        <span class="hamburger-menu"></span>
+      </button>
+      <nav
+        id="mobile-menu"
+        class="mobile-menu d_none"
+        role="navigation"
+        aria-label="Mobile navigation"
+        data-mb-active="false"
+      >
+        <a href="#about-me" (click)="toggleMobileMenu()">{{
+          "about" | translate
+        }}</a>
+        <a href="#skills" (click)="toggleMobileMenu()">{{
+          "skills" | translate
+        }}</a>
+        <a href="#projects" (click)="toggleMobileMenu()">{{
+          "projects" | translate
+        }}</a>
+
+        <div
+          class="language-switcher"
+          role="language-switcher"
+          aria-label="Language switcher"
+        >
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+            <span class="lang-label-en">EN</span>
+            <span class="lang-label-de">DE</span>
+          </label>
+        </div>
+      </nav>
+    </div>
   </header>
 </div>
