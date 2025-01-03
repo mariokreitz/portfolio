@@ -4,6 +4,7 @@
 .testimonials {
   padding-top: 144px;
   padding-bottom: 16px;
+  overflow: hidden;
 
   .content {
     @include flexbox(
@@ -13,20 +14,22 @@
       $gap: 48px
     );
 
-    mask: linear-gradient(
-      90deg,
-      transparent,
-      white 10%,
-      white 90%,
-      transparent
-    );
-    -webkit-mask: linear-gradient(
-      90deg,
-      transparent,
-      white 10%,
-      white 90%,
-      transparent
-    );
+    @media screen and (min-width: 830px) {
+      mask: linear-gradient(
+        90deg,
+        transparent,
+        white 10%,
+        white 90%,
+        transparent
+      );
+      -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 10%,
+        white 90%,
+        transparent
+      );
+    }
   }
 
   app-carousel {
