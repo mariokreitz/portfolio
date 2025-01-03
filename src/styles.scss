@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "./scss/reset" as *;
 @use "scss/variables" as *;
 @use "scss/mixin" as *;
@@ -40,7 +41,10 @@ body {
   @include paddingInline($paddingLeft, $paddingRight);
 
   @include breakpoint(xl) {
-    @include paddingInline($paddingLeft / 2, $paddingRight/2);
+    @include paddingInline(
+      math.div($paddingLeft, 2),
+      math.div($paddingRight, 2)
+    );
   }
 }
 

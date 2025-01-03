@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin flexbox($direction: row, $justify: flex-start, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
@@ -17,8 +19,8 @@
   padding-right: $paddingRight;
 
   @include breakpoint(xl) {
-    padding-left: $paddingLeft / 2;
-    padding-right: $paddingRight / 2;
+    padding-left: math.div($paddingLeft, 2);
+    padding-right: math.div($paddingRight, 2);
   }
 }
 
