@@ -6,8 +6,12 @@ div {
   flex-wrap: wrap;
 
   @include breakpoint(xxl) {
-    @include flexbox($gap: 40px);
     width: 550px;
-    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  @include breakpoint(sm) {
+    width: 358px;
+    gap: 16px;
   }
 }
