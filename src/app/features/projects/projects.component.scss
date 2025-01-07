@@ -15,4 +15,8 @@
       width: 100%;
     }
   }
+
+  @include breakpoint(sm) {
+    @include paddingInline($paddingLeft: 0px, $paddingRight: 0px);
+  }
 }
