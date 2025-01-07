@@ -23,6 +23,29 @@
   border: 1px solid $clr-primary-green;
   z-index: 20;
 
+  .content-mobile {
+    display: none;
+
+    @include breakpoint(sm) {
+      @include flexbox(
+        $direction: column,
+        $justify: flex-start,
+        $align: flex-end,
+        $gap: 31px
+      );
+
+      padding: 12px;
+
+      .button-close {
+        margin-right: 12px;
+      }
+
+      > img {
+        border-radius: 16px;
+      }
+    }
+  }
+
   .content-left {
     @include flexbox($direction: column, $align: flex-start, $gap: 40px);
     width: 480px;
@@ -78,7 +101,7 @@
     }
 
     @include breakpoint(md) {
-      width: 370px;
+      width: 366px;
 
       .title {
         gap: 12px;
@@ -124,6 +147,12 @@
     @include flexbox($direction: column, $align: flex-end, $gap: 40px);
     width: 520px;
 
+    .button-close {
+      @include breakpoint(sm) {
+        display: none;
+      }
+    }
+
     > img {
       width: inherit;
       height: 370px;
@@ -139,7 +168,15 @@
       > img {
         height: 200px;
         border-radius: 16px;
+
+        @include breakpoint(sm) {
+          display: none;
+        }
       }
+    }
+
+    @include breakpoint(sm) {
+      width: 366px;
     }
   }
 
@@ -152,6 +189,11 @@
     width: 100%;
     border: unset;
     border-radius: unset;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
   }
 }
 
