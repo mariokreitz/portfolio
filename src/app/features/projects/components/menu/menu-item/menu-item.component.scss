@@ -7,6 +7,12 @@
   padding: 40px 32px 40px 32px;
   transition: background-color 125ms ease-in-out;
 
+  @include breakpoint(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
   h2 {
     position: relative;
     font-family: "FireCode";
