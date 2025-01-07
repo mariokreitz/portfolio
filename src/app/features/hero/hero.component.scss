@@ -9,6 +9,10 @@ app-title {
   position: relative;
   height: 100vh;
   background: linear-gradient(55.22deg, #1c1c1c 36.26%, #08463b 93.28%);
+
+  @include breakpoint(sm) {
+    height: 100dvh;
+  }
 }
 
 .content {
