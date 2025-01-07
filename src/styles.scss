@@ -62,6 +62,10 @@ body {
 .logo {
   height: 54px;
   filter: drop-shadow(0 0 10px $clr-primary-green);
+
+  @include breakpoint(sm) {
+    height: 44px;
+  }
 }
 
 .jello-horizontal:hover {
