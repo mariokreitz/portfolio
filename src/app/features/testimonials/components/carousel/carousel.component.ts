@@ -44,10 +44,12 @@ export class CarouselComponent {
         'Die Zusammenarbeit mit Mario Kreitz im Rahmen des Frontend-Projekts „Kochwelt“ war durchweg hervorragend. Mario hat nicht nur seine technischen Fähigkeiten und sein tiefes Verständnis für moderne Frontend-Technologien unter Beweis gestellt, sondern auch durch sein Engagement und seine professionelle Arbeitsweise überzeugt.Besonders hervorzuheben ist seine klare und offene Kommunikation, die maßgeblich zum Erfolg des Projekts beigetragen hat. Mario hat stets proaktiv Lösungen für Herausforderungen angeboten und sich flexibel auf neue Anforderungen eingestellt. Seine saubere und effiziente Code-Struktur zeugt von hoher Fachkompetenz und einem ausgeprägten Sinn für Qualität.Darüber hinaus war Mario jederzeit zuverlässig und pünktlich in der Erfüllung der Projektmeilensteine. Die Zusammenarbeit verlief reibungslos und auf Augenhöhe, was die Projektarbeit sehr angenehm gemacht hat.Insgesamt war die Kooperation mit Mario eine durchweg positive Erfahrung, und ich würde ihn ohne Zögern für zukünftige Projekte weiterempfehlen.',
     },
     {
-      id: 2,
-      name: '',
-      contentEN: '',
-      contentDE: '',
+      id: 3,
+      name: 'Marcel Menke',
+      contentEN:
+        'Working with Mario was a highly enjoyable and productive experience. From the start, he demonstrated strong commitment and technical expertise. I was particularly impressed with his ability to solve complex tasks and always present clear, understandable solutions. He is a true team player, who not only mastered the technical aspects but also had a great ear for the project’s needs. His work in frontend development, where he combined Angular with innovative approaches, produced impressive results. I’m looking forward to the opportunity to collaborate with him again!',
+      contentDE:
+        'Die Zusammenarbeit mit Mario war äußerst angenehm und produktiv. Vom ersten Moment an zeigte er großes Engagement und technisches Know-how. Besonders beeindruckt hat mich seine Fähigkeit, komplexe Aufgaben zu lösen und stets klare, nachvollziehbare Lösungen zu präsentieren. Er ist ein echter Teamplayer, der nicht nur die technischen Aspekte meisterte, sondern auch immer ein offenes Ohr für die Bedürfnisse des Projekts hatte. Besonders in der Frontend-Entwicklung, wo er Angular mit innovativen Ansätzen kombinierte, konnte er beeindruckende Ergebnisse liefern. Ich freue mich auf die Möglichkeit, wieder mit ihm zu arbeiten!',
     },
   ];
 
