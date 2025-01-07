@@ -8,6 +8,12 @@
     line-height: 28.06px;
     color: $clr-primary-green;
     margin-bottom: 20px;
+
+    @include breakpoint(sm) {
+      font-size: 18px;
+      line-height: 21.04px;
+      margin-bottom: 16px;
+    }
   }
 
   .about-me {
@@ -17,6 +23,10 @@
     padding: 32px;
     border-radius: 30px;
 
+    @include breakpoint(sm) {
+      width: 358px;
+    }
+
     > h3 {
       color: $clr-primary-green;
       font-family: "FireCode";
@@ -24,11 +34,21 @@
       font-size: 64px;
       line-height: 64px;
       letter-spacing: -3%;
+
+      @include breakpoint(sm) {
+        font-size: 56px;
+        line-height: 44.8px;
+      }
     }
     > p {
       font-size: 18px;
       line-height: 21.6px;
       text-wrap: pretty;
+
+      @include breakpoint(sm) {
+        font-size: 16px;
+        line-height: 19.2px;
+      }
     }
 
     .about-perks {
@@ -45,6 +65,11 @@
         p {
           flex: 1;
           color: rgba(255, 255, 255, 0.8);
+
+          @include breakpoint(sm) {
+            font-size: 16px;
+            line-height: 19.2px;
+          }
 
           &:hover {
             color: white;
