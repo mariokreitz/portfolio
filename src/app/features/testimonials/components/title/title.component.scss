@@ -1,4 +1,5 @@
 @use "./../../../../../scss/variables" as *;
+@use "./../../../../../scss/mixin" as *;
 
 h2 {
   font-family: "FireCode";
@@ -6,4 +7,10 @@ h2 {
   font-weight: 700;
   line-height: 41.98px;
   color: $clr-primary-green;
+
+  @include breakpoint(sm) {
+    font-size: 24px;
+    line-height: 31.49px;
+    text-align: center;
+  }
 }
