@@ -34,4 +34,7 @@
 
 #about-me {
   padding-top: 144px;
+  @include breakpoint(sm) {
+    padding-top: 100px;
+  }
 }
