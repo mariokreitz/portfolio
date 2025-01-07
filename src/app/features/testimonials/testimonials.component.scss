@@ -36,5 +36,9 @@
     @include flexbox($direction: column, $justify: center, $align: center);
     width: 100%;
     height: 350px;
+
+    @include breakpoint(sm) {
+      height: 450px;
+    }
   }
 }
