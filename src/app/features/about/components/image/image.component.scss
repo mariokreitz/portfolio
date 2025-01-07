@@ -23,6 +23,11 @@
     width: 500px;
     height: 500px;
   }
+
+  @include breakpoint(sm) {
+    width: 358px;
+    height: 358px;
+  }
 }
 
 .profile-image {
