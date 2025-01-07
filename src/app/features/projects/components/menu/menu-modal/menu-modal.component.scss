@@ -9,6 +9,10 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 10;
+
+  @include breakpoint(sm) {
+    height: 100dvh;
+  }
 }
 
 .modal-content {
@@ -25,13 +29,14 @@
 
   .content-mobile {
     display: none;
+    width: 100%;
 
     @include breakpoint(sm) {
       @include flexbox(
         $direction: column,
         $justify: flex-start,
         $align: flex-end,
-        $gap: 31px
+        $gap: 24px
       );
 
       padding: 12px;
@@ -42,6 +47,10 @@
 
       > img {
         border-radius: 16px;
+        max-height: 216px;
+        width: 100%;
+        max-width: fit-content;
+        margin: 0 auto;
       }
     }
   }
@@ -140,6 +149,9 @@
       .button-controls {
         @include flexbox($gap: 32px);
       }
+    }
+    @include breakpoint(sm) {
+      gap: 32px !important;
     }
   }
 
