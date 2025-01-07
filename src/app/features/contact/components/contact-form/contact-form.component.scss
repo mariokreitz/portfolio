@@ -7,6 +7,10 @@ form {
   @include breakpoint(xl) {
     width: 530px;
   }
+  @include breakpoint(sm) {
+    max-width: 530px;
+    width: 100%;
+  }
 
   .form-group {
     @include flexbox(
