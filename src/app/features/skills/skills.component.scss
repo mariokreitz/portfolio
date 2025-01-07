@@ -6,6 +6,10 @@
   padding-bottom: 4px;
   background: $gradient-skill;
 
+  @include breakpoint(sm) {
+    padding-top: 100px;
+  }
+
   .content {
     @include flexbox($justify: space-between);
     @include paddingInline($paddingLeft: 100px, $paddingRight: 100px);
