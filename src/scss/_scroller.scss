@@ -20,12 +20,13 @@
 .scroller {
   position: absolute;
   bottom: 4px;
-  left: 0;
-  right: 0;
+  left: 50%;
+
   z-index: 2;
-  max-width: 100%;
+  width: 100%;
+  max-width: 3840px;
   transform-origin: 0;
-  transform: rotate(-2deg);
+  transform: translateX(-50%) rotate(-2deg);
   user-select: none;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(5.3px);
