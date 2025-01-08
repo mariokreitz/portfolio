@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
    * If the user clicks outside of the mobile menu and the menu is open, the menu is closed.
    */
   ngOnInit(): void {
+    this.setInputCheckedProperty();
     document.addEventListener('click', (event: MouseEvent) => {
       const menu = document.getElementById('mobile-menu') as HTMLDivElement;
       const menuButton = document.querySelector(
@@ -93,5 +94,21 @@ export class HeaderComponent implements OnInit {
     if (!background) return;
 
     background.style.filter = isActive ? 'brightness(1)' : 'brightness(0.5)';
+  }
+
+  /**
+   * Sets the checked property of the language switcher input element based on the current language.
+   * Determines if the current language is German ('de') and sets the input's checked property accordingly.
+   */
+  setInputCheckedProperty(): void {
+    const languageSwitcherInput: HTMLInputElement | null =
+      document.getElementById(
+        'language-switcher-input'
+      ) as HTMLInputElement | null;
+
+    if (languageSwitcherInput !== null) {
+      const isGerman: boolean = this.translate.getCurrentLanguage() === 'de';
+      languageSwitcherInput.checked = isGerman;
+    }
   }
 }
