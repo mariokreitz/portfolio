@@ -29,5 +29,15 @@ export class HeroComponent {
     '•',
     'HTML, CSS, JavaScript, Angular',
     '•',
+    'Typescript, SASS, Bootstrap',
+    '•',
+    'Familiar with',
+    '•',
+    'NodeJS, Express, MongoDB',
+    '•',
+    'Currently learning',
+    '•',
+    'Docker, Backend (APIs)',
+    '•',
   ];
 }
