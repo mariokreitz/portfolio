@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../../core/services/translation.service';
 
 @Component({
   selector: 'app-privat-policy',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './privat-policy.component.scss',
 })
 export class PrivatPolicyComponent {
+  translate = inject(TranslationService);
   ngOnInit(): void {
     window.scrollTo(0, 0);
   }
