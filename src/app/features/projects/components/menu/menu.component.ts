@@ -99,6 +99,28 @@ export class MenuComponent {
         repoUrl: 'https://github.com/mariokreitz/pokedex-v2',
         demoUrl: 'https://pokedex.mario-kreitz.dev/',
       },
+      {
+        id: 4,
+        name: 'Blog mit CMS (WIP)',
+        descriptionEN:
+          'A modern blog platform powered by a flexible CMS. Easily create, manage, and publish content with a user-friendly interface. Perfect for writers, teams, and content creators looking to stay organized and efficient.',
+        descriptionDE:
+          'Eine moderne Blog-Plattform mit einem flexiblen CMS. Erstelle, verwalte und veröffentliche Inhalte ganz einfach über eine benutzerfreundliche Oberfläche. Ideal für Autoren, Teams und Content-Ersteller, die organisiert und effizient arbeiten möchten.',
+        screenshotUrl:
+          'https://raw.githubusercontent.com/mariokreitz/blog-with-simple-cms/refs/heads/main/public/preview.png',
+        tech: [
+          {
+            imgSrc: 'nextjs Small.svg',
+            name: 'NextJS',
+          },
+          {
+            imgSrc: 'mongodb Small.svg',
+            name: 'MongoDB',
+          },
+        ],
+        repoUrl: 'https://github.com/mariokreitz/blog-with-simple-cms',
+        demoUrl: 'https://lipptattoos.vercel.app/',
+      },
     ];
   }
 
